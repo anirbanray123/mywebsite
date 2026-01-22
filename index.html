@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirban Ray - PhD Researcher</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Anirban Ray</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="assets/images/profile.jpeg" alt="Anirban Ray">
+                </div>
+                <div class="hero-text">
+                    <h1>Anirban Ray</h1>
+                    <p class="subtitle">PhD Researcher | PMRF Fellow</p>
+                    <p class="affiliation">Indian Institute of Technology, Delhi</p>
+                    <p class="research-interests">World Modelling · SE(3) Equivariance · Deep Learning</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-label">Education</span>
+                            <span class="stat-value">B.Tech (IIT Dhanbad) · PhD (IIT Delhi)</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Fellowship</span>
+                            <span class="stat-value">Prime Minister's Research Fellowship (PMRF)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:anirbanray100@gmail.com" class="btn-primary">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            Email
+                        </a>
+                        <a href="tel:+916294605824" class="btn-secondary">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            Phone
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p class="lead">
+                    I am a PhD researcher at IIT Delhi, working on <strong>World Modelling</strong> and <strong>SE(3) Equivariant Learning</strong> 
+                    for molecular generation and simulation. I am honored to be a <strong>Prime Minister's Research Fellow (PMRF)</strong>, 
+                    India's most prestigious PhD fellowship.
+                </p>
+                <p>
+                    My research focuses on developing scalable approaches to learning equivariance in molecular systems. 
+                    Traditional architectures that hardcode equivariance struggle to scale to larger molecules like proteins 
+                    or handle complex molecular tasks. My work explores learning equivariance from randomly rotated molecules 
+                    using world modelling techniques, training models with over <strong>170 million parameters</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section research-section" id="research">
+        <div class="container">
+            <h2 class="section-title">Thesis Work</h2>
+            <div class="research-card">
+                <h3 class="research-title">Learning SE(3) Equivariance in Molecular Generation with World Modelling</h3>
+                <div class="research-description">
+                    <p>
+                        <strong>Challenge:</strong> Hardcoding equivariance into architectures limits scalability to larger molecules 
+                        (like proteins) and complex molecular tasks. Learning equivariance from randomly rotated molecules is essential.
+                    </p>
+                    <p>
+                        <strong>Approach:</strong> I develop a solution using point cloud representations of molecules voxelized with 
+                        Gaussian noise. The system employs:
+                    </p>
+                    <ul class="research-list">
+                        <li><strong>VQ-VAE</strong> for latent space generation</li>
+                        <li><strong>Denoising Autoencoder (DAE)</strong> as a world model to invert rotations and learn the data manifold through one-step denoising</li>
+                                            </ul>
+                    <p>
+                        <strong>Scale:</strong> Successfully trained a <strong>170 million parameter model</strong> for this task, 
+                        demonstrating the approach's scalability and effectiveness.
+                    </p>
+                </div>
+                <div class="research-tags">
+                    <span class="tag">World Modelling</span>
+                    <span class="tag">SE(3) Equivariance</span>
+                    <span class="tag">VQ-VAE</span>
+                    <span class="tag">Molecular Generation</span>
+                    <span class="tag">Deep Learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="publications">
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Latent Diffusion Models for Image Generation</h3>
+                    <p class="project-meta">COL775 · Prof. Parag Singla · IIT Delhi</p>
+                    <p class="project-description">
+                        Developed a two-stage architecture: (1) Encoder-decoder with slot attention producing 11 slots 
+                        trained on CLEVERTex dataset, (2) Diffusion model with U-Net architecture using cross-attention 
+                        with slots for conditional image generation.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag-small">Diffusion Models</span>
+                        <span class="tag-small">Slot Attention</span>
+                        <span class="tag-small">U-Net</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Seq2Seq Translation: Text to Math Expression</h3>
+                    <p class="project-meta">COL775 · Prof. Parag Singla · IIT Delhi</p>
+                    <p class="project-description">
+                        Implemented sequence-to-sequence translation with attention mechanisms, comparing GloVe and BERT 
+                        embeddings. LSTM decoder used for generating mathematical expressions from natural language text.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag-small">Seq2Seq</span>
+                        <span class="tag-small">Attention</span>
+                        <span class="tag-small">LSTM</span>
+                        <span class="tag-small">BERT</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Indian Bird Species Classification</h3>
+                    <p class="project-meta">COL775 · Prof. Parag Singla · IIT Delhi</p>
+                    <p class="project-description">
+                        Built ResNet architecture (VGG16-inspired) for bird species classification. Explored various 
+                        normalization techniques (Batch, Group, Layer, Instance, Batch-Instance) and generated attention 
+                        maps using Grad-CAM for explainability.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag-small">ResNet</span>
+                        <span class="tag-small">Normalization</span>
+                        <span class="tag-small">Grad-CAM</span>
+                        <span class="tag-small">Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>PhD Researcher · PMRF Fellow</h3>
+                        <p class="timeline-org">Indian Institute of Technology, Delhi</p>
+                        <p class="timeline-gpa">CGPA: 8.10/10.0</p>
+                        <p class="timeline-description">
+                            Research in World Modelling and SE(3) Equivariant Learning for molecular systems.
+                        </p>
+                        <details class="timeline-courses">
+                            <summary>Coursework</summary>
+                            <ul>
+                                <li>Machine Learning (ELL784)</li>
+                                <li>Machine Learning Practical (AIP701)</li>
+                                <li>Deep Learning (COL775)</li>
+                                <li>Computer Vision (AIL861)</li>
+                                <li>Optimization (CRL734)</li>
+                                <li>Signal Theory (ELL711)</li>
+                                <li>Detection and Estimation (ELL719)</li>
+                                <li>Biomedical Data Analysis (BML738)</li>
+                                <li>Mathematical Foundations for Minds (AIL701)</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Sept 2022 - Dec 2022</div>
+                    <div class="timeline-content">
+                        <h3>Associate Software Engineer</h3>
+                        <p class="timeline-org">Uzio</p>
+                        <ul class="timeline-list">
+                            <li>Full-cycle software development from requirement gathering to deployment</li>
+                            <li>Unit testing and code quality assurance for SaaS platform features</li>
+                            <li>Collaborated with product and tech teams for iterative improvements</li>
+                            <li>Pushed code to production versions of SaaS software</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2018 - May 2022</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology</h3>
+                        <p class="timeline-org">Indian Institute of Technology (ISM), Dhanbad</p>
+                        <p class="timeline-gpa">CGPA: 8.40/10.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements-section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card highlight">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Prime Minister's Research Fellowship (PMRF)</h3>
+                    <p>
+                        Awarded India's most prestigious PhD fellowship worth over <strong>$70,000 USD</strong> 
+                        for 5 years at IIT Delhi. Recognizes exceptional research potential and academic excellence.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">💎</div>
+                    <h3>Copper Scholarship</h3>
+                    <p>
+                        Received the Copper Club Scholarship worth <strong>$10,000 USD</strong> to fund undergraduate 
+                        studies at IIT Dhanbad.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎯</div>
+                    <h3>JEE Advanced & Mains</h3>
+                    <p>
+                        Secured <strong>99.8+ percentile</strong> among 1.3 million students in India's most competitive 
+                        engineering entrance examination to gain admission to IIT Dhanbad.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌏</div>
+                    <h3>Nepal AI School</h3>
+                    <p>
+                        Presented world modelling research at Nepal AI School, sharing insights on SE(3) equivariant 
+                        learning with the international AI research community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always interested in discussing research collaborations, innovative projects, 
+                    or opportunities in deep learning and molecular modelling.
+                </p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:anirbanray100@gmail.com">anirbanray100@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+916294605824">+91-6294605824</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>IIT Delhi, New Delhi, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Anirban Ray. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
